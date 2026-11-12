@@ -1,0 +1,15 @@
+<!doctype html>
+<html
+  xmlns:th="http://www.thymeleaf.org"
+  xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Panel del administrador</title>
+  </head>
+  <body>
+    <div th:replace="~{fragments/navbar :: navbar}"></div>
+    <h1>Panel del administrador</h1>
+    <p>Hola, <span sec:authentication="name">usuario</span></p>
+  </body>
+</html>
